@@ -1,0 +1,23 @@
+graph={
+    "A":["B","C"],
+    "B":["A","B","C"],
+    "C":["A","F"],
+    "D":["B"],
+    "E":["B","F"],
+    "F":["C","E","G"],
+    "G":["F"]
+}
+visited=set()
+path=[]
+def dfs(node):
+  visited.add(node)
+  path.append(node)
+  print("Visiting:",node)
+  for neighbor in graph.get(node,[]):
+    if neighbor not in visited:
+      dfs(neighbor)
+  print("Backtracking from:",node)
+start_node="A"
+dfs(start_node)
+print("\nExploration path:", path)
+print("Visited chambers:",visited)
