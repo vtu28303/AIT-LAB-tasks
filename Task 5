@@ -1,0 +1,25 @@
+R1=30
+R2=70
+total=R1+R2
+P1=R1/total
+P2=R2/total
+print("R1=",R1)
+print("R2=",R2)
+print("Total= ",total)
+print("P1=",P1)
+print("P2=",P2)
+if P1>P2:
+    print("Best Route :R1")
+else:
+    print("Best Route :R2")
+print("P1+P2=",P1+P2)  
+
+
+
+R1= 30
+R2= 70
+Total=  100
+P1= 0.3
+P2= 0.7
+Best Route :R2
+P1+P2= 1.0
